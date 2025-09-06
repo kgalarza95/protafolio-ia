@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Web - Desarrollador Senior</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><a href="#">Mi Portafolio</a></h1>
+            <nav class="nav">
+                <button class="hamburger" aria-label="Abrir menú">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#about">Acerca de mí</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="about" class="section about">
+            <div class="container">
+                <h2>Acerca de mí</h2>
+                <div class="about-content">
+                    <img src="https://via.placeholder.com/150" alt="Mi foto de perfil" class="profile-pic">
+                    <p>¡Hola! Soy un desarrollador web senior con más de 10 años de experiencia en la creación de
+                        aplicaciones web robustas y escalables. Me especializo en el frontend, utilizando las últimas
+                        tecnologías para construir interfaces de usuario atractivas y funcionales. Mi pasión es
+                        transformar ideas complejas en soluciones web intuitivas y eficientes.</p>
+                    <p>Durante mi carrera, he trabajado en una amplia variedad de proyectos, desde pequeñas startups
+                        hasta grandes empresas, lo que me ha permitido adquirir una visión integral del ciclo de vida
+                        del desarrollo de software. Siempre estoy aprendiendo y explorando nuevas herramientas y
+                        metodologías para ofrecer el mejor valor posible.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2>Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h3>HTML5</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill html" style="width: 95%;"><span>95%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3>CSS3</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill css" style="width: 90%;"><span>90%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3>JavaScript</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill js" style="width: 85%;"><span>85%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3>React</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill react" style="width: 80%;"><span>80%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Node.js</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill node" style="width: 70%;"><span>70%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Git</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill git" style="width: 90%;"><span>90%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2>Proyectos</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3>Proyecto 1: E-commerce Dinámico</h3>
+                        <p>Desarrollo de una plataforma de comercio electrónico completa con gestión de productos,
+                            carrito de compras y pasarela de pago. Utiliza React y Node.js.</p>
+                        <a href="#" class="btn" target="_blank">Ver Proyecto</a>
+                        <p>
+
+                        </p>
+                    </article>
+                    <article class="project-card">
+                        <h3>Proyecto 2: Sistema de Gestión de Tareas</h3>
+                        <p>Aplicación web para la gestión eficiente de tareas, con funcionalidades de asignación,
+                            seguimiento de progreso y notificaciones. Implementado con Vanilla JS y API REST.</p>
+                        <a href="#" class="btn" target="_blank">Ver Proyecto</a>
+                        <p>
+
+                        </p>
+                    </article>
+                    <article class="project-card">
+                        <h3>Proyecto 3: Blog Personal Responsivo</h3>
+                        <p>Creación de un blog personal con un diseño totalmente responsivo y un sistema de
+                            administración de contenido sencillo. Hecho con HTML, CSS y un poco de JS.</p>
+                        <a href="#" class="btn" target="_blank">Ver Proyecto</a>
+                        <p>
+
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2>Contacto</h2>
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required aria-describedby="nameError">
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required aria-describedby="emailError">
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto:</label>
+                        <input type="text" id="subject" name="subject" required aria-describedby="subjectError">
+                        <div class="error-message" id="subjectError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" required
+                            aria-describedby="messageError"></textarea>
+                        <div class="error-message" id="messageError"></div>
+                    </div>
+                    <button type="submit" class="btn submit-btn">Enviar Mensaje</button>
+                    <div class="success-message" id="formSuccess"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Mi Portafolio Web. Todos los derechos reservados.</p>
+            <ul class="social-links">
+                <li><a href="#" aria-label="LinkedIn"><img src="https://via.placeholder.com/24/0A66C2/FFFFFF?text=in"
+                            alt="LinkedIn"></a></li>
+                <li><a href="#" aria-label="GitHub"><img src="https://via.placeholder.com/24/181717/FFFFFF?text=gh"
+                            alt="GitHub"></a></li>
+                <li><a href="#" aria-label="Twitter"><img src="https://via.placeholder.com/24/1DA1F2/FFFFFF?text=tw"
+                            alt="Twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
